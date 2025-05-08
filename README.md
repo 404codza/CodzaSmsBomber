@@ -1,2 +1,5 @@
 # CodzaSmsBomber
-Codza Sms Bomber 
+nasıl çalışır
+git clone 
+cd CodzaSmsBomber
+python3 CodzaSms.py
