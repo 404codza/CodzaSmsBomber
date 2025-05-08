@@ -1,8 +1,20 @@
+#CODZA
+#enough reborn kodlarından yararlanılmıştır
 from colorama import Fore, Style
 from time import sleep
 from os import system
 from sms import SendSms
 import threading
+
+# CODZA ASCII Sanatı Başlangıcı
+print("""
+  CCCC    OOO    DDDD    ZZZZZ   AAAAA
+ C        O   O   D   D     Z    A     A
+ C        O   O   D   D    Z     AAAAAAA
+ C        O   O   D   D   Z      A     A
+  CCCC    OOO    DDDD   ZZZZZ   A     A
+""")
+# CODZA ASCII Sanatı Sonu
 
 servisler_sms = []
 for attribute in dir(SendSms):
@@ -11,18 +23,9 @@ for attribute in dir(SendSms):
         if attribute.startswith('__') == False:
             servisler_sms.append(attribute)
 
-            
 while 1:
     system("cls||clear")
     print("""{}
-     ______                         _     
-    |  ____|                       | |    
-    | |__   _ __   ___  _   _  __ _| |__  
-    |  __| | '_ \ / _ \| | | |/ _` | '_ \ 
-    | |____| | | | (_) | |_| | (_| | | | |
-    |______|_| |_|\___/ \__,_|\__, |_| |_|
-                               __/ |      
-                              |___/      
     
     Sms: {}           {}by {}@tingirifistik\n  
     """.format(Fore.LIGHTCYAN_EX, len(servisler_sms), Style.RESET_ALL, Fore.LIGHTRED_EX))
