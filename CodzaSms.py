@@ -14,7 +14,7 @@ print("""
  C        O   O   D   D   Z      A     A
   CCCC    OOO    DDDD   ZZZZZ   A     A
 """)
-# CODZA ASCII Sanatı Sonu
+# CODZA ASCII Sanatı 
 
 servisler_sms = []
 for attribute in dir(SendSms):
