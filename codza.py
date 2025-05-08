@@ -1,10 +1,10 @@
 from colorama import Fore, Style
 from time import sleep
 from os import system
-from sms import SendSms
+from codza import Sendsms
 import threading
 
-servisler_sms = []
+servisler_codza = []
 for attribute in dir(SendSms):
     attribute_value = getattr(SendSms, attribute)
     if callable(attribute_value):
@@ -25,7 +25,7 @@ while 1:
                               |___/      
     
     Sms: {}           {}by {}@tingirifistik\n  
-    """.format(Fore.LIGHTCYAN_EX, len(servisler_sms), Style.RESET_ALL, Fore.LIGHTRED_EX))
+    """.format(Fore.LIGHTCYAN_EX, len(servisler_codza), Style.RESET_ALL, Fore.LIGHTRED_EX))
     try:
         menu = (input(Fore.LIGHTMAGENTA_EX + " 1- SMS Gönder (Normal)\n\n 2- SMS Gönder (Turbo)\n\n 3- Çıkış\n\n" + Fore.LIGHTYELLOW_EX + " Seçim: "))
         if menu == "":
