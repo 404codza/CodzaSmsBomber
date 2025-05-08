@@ -17,7 +17,15 @@ for attribute in dir(SendSms):
             
 while 1:
     system("cls||clear")
-    print("{}\n     ______                         _     \n    |  ____|                       | |    \n    | |__   _ __   ___  _   _  __ _| |__  \n    |  __| | '_ \ / _ \| | | |/ _` | '_ \ \n    | |____| | | | (_) | |_| | (_| | | | |\n    |______|_| |_|\___/ \__,_|\__, |_| |_|\n                               __/ |      \n                              |___/      \n    \n    Sms: {}           {}by {}@CODZA\n  ".format(Fore.LIGHTCYAN_EX, len(servisler_sms), Style.RESET_ALL, Fore.LIGHTRED_EX))
+ print(f"""{Fore.LIGHTCYAN_EX}
+   ____ ___  ____  _____ ______          ___      
+  / ___/ _ \|  _ \| ____|___ /\ \        / (_)     
+ | |  | | | | | | |  _|   |_ \ \ \  /\  / / _ _ __ 
+ | |__| |_| | |_| | |___ ___) | \ \/  \/ / | | '__|
+  \____\___/|____/|_____|____/   \_/\_/ |_|_|_|   
+
+Sms: {len(servisler_sms)}           {Style.RESET_ALL}by {Fore.LIGHTRED_EX}@CODZA
+""")  ".format(Fore.LIGHTCYAN_EX, len(servisler_sms), Style.RESET_ALL, Fore.LIGHTRED_EX))
     try:
         menu = input(Fore.LIGHTMAGENTA_EX + " 1- SMS Gönder (Normal)\n\n 2- SMS Gönder (Turbo)\n\n 3- Çıkış\n\n" + Fore.LIGHTYELLOW_EX + " Seçim: ")
         if menu == "":
