@@ -27,7 +27,7 @@ while 1:
     system("cls||clear")
     print("""{}
     
-    Sms: {}           {}by {}@tingirifistik\n  
+    Sms: {}           {}by {}@Codza\n  
     """.format(Fore.LIGHTCYAN_EX, len(servisler_sms), Style.RESET_ALL, Fore.LIGHTRED_EX))
     try:
         menu = (input(Fore.LIGHTMAGENTA_EX + " 1- SMS Gönder (Normal)\n\n 2- SMS Gönder (Turbo)\n\n 3- Çıkış\n\n" + Fore.LIGHTYELLOW_EX + " Seçim: "))
